@@ -1,0 +1,14 @@
+.category {
+  &__name {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  &__container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+    justify-items: center;
+    justify-content: start;
+  }
+}

@@ -1,0 +1,12 @@
+.error {
+  &__title {
+    font-size: 2rem;
+  }
+  &__span {
+    color: $green;
+    font-weight: bold;
+  }
+  &__link {
+    color: #189de6 !important;
+  }
+}

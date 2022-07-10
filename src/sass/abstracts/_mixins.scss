@@ -1,0 +1,62 @@
+@mixin shake-animation {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@mixin up-animation {
+  animation: up 1s ease-in-out 1 forwards !important;
+}
+@mixin down-animation {
+  animation: down 1s ease-in-out 1 forwards;
+}
+
+@mixin shadow {
+  box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+}

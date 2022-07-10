@@ -1,0 +1,38 @@
+.cartitem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  &--big {
+    font-size: 2rem;
+    @media (max-width: 576px) {
+      border: 1px solid $grey;
+      border-radius: 5px;
+      margin-bottom: 60px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      max-height: fit-content;
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  &__price {
+    margin: 0;
+  }
+  &__name {
+    margin: 0;
+  }
+  &__image {
+    width: 130px;
+    height: fit-content;
+  }
+  &__separator {
+    border: none;
+    height: 2px;
+    background-color: #e5e5e5;
+  }
+}

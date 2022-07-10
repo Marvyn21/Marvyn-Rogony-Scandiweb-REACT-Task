@@ -1,0 +1,27 @@
+.amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  &__square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $black;
+    &--big {
+      width: 40px;
+      height: 40px;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $light-grey;
+    }
+    &--disabled {
+      color: $light-grey;
+      border: 1px solid $light-grey;
+    }
+  }
+}

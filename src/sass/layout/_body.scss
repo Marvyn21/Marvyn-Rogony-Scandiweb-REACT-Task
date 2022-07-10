@@ -1,0 +1,25 @@
+body {
+  font-family: "Raleway";
+  padding: 0 5vw;
+  margin: 0;
+  max-width: 2000px;
+  @media (max-width: 768px) {
+    padding: 0 5px;
+  }
+}
+
+.App {
+  padding-top: 15vh;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
