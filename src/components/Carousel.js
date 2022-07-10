@@ -5,21 +5,13 @@ export class Carousel extends Component {
     super(props);
     this.carousel = React.createRef();
   }
-  // Ok this carousel ended being a bit ugly/complicated :P, so I'll comment on everything it does
+  
   nextSlide = () => {
-    // I make sure it runs only when the carousel has content
     if (this.carousel.current.children.length > 1) {
-      // First Carousel Item
       const firstItem = this.carousel.current.children[0];
-      // Transition Animation
       this.carousel.current.style.transition = "300ms ease-out all";
-      // Get the width of every item, so I know how much translate each one
       const slideWidth = firstItem.offsetWidth;
-      // Translate the item to show the new one
       this.carousel.current.style.transform = `translateX(-${slideWidth}px)`;
-
-      // The old item has to be relocated to the end, so it will behave as an infinite carousel
-      // But before relocate it, we have to wait till it finish the animation c:
       setTimeout(() => {
         this.carousel.current.style.transition = "none";
         this.carousel.current.style.transform = `translateX(0)`;

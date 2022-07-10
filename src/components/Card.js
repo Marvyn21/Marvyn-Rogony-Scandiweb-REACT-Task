@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-// Redux
 import { connect } from 'react-redux'
 import { addItem } from '../redux/cartSlice';
-// React Router
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 

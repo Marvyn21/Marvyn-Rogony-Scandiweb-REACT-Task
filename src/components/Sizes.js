@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// Component
 import Square from './Square'
 export class Sizes extends Component {
   changeAttribute(attribute, product, index) {

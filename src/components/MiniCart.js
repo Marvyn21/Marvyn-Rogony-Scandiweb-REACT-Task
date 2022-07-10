@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
-// Redux
 import { connect } from 'react-redux'
-// React Router
 import { Link } from 'react-router-dom'
-// Components
 import CartItem from './CartItem'
 import EmptyCart from './EmptyCart'
 import Modal from './Modal'
@@ -32,13 +29,13 @@ export class MiniCart extends Component {
     const { products } = this.props.cart
     const { symbol } = this.props.currency
     const { close } = this.props
-    const total = {} // {$:100, ¥: 200, etc}
+    const total = {} 
     let count = 0
     for (const item of products) {
       count += item.amount
     }
     for (const item of products) {
-      // calculate the total amount in every currency
+      // calculate the total amount in the different currency
       for (const price of item.item.prices) {
         if (total[price.currency.symbol] === undefined) {
           total[price.currency.symbol] = price.amount * item.amount

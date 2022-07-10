@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// Redux
 import { connect } from 'react-redux'
 import { decreaseAmount, incrementAmount } from '../redux/cartSlice'
 export class Amount extends Component {

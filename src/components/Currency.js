@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-// Redux
 import { connect } from 'react-redux'
 import { setCurrency } from '../redux/currencySlice';
-// GraphQL
 import { Query } from '@apollo/client/react/components';
 import { GET_CURRENCIES } from '../utils/queries';
 export class Currency extends Component {
