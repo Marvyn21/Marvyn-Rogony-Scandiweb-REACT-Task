@@ -1,1 +1,4 @@
-react-scandiweb-test: react || redux || graphql || saas || apolloGraphql
+react-scandiweb-test: 
+resources :
+react || redux || graphql || saas || apolloGraphql
+ use a graphql endpoint 
